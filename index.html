@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+          <button id="generate-key">Generate Secret Key</button>
+          <div id="generated-key" class="key-display">------</div>
+        </div>
+        <div class="right">
+          <div>Enter PIN:</div>
+          <input type="text" id="pin-input" readonly>
+          <div class="keypad">
+            <button onclick="appendDigit(1)">7</button>
+            <button onclick="appendDigit(2)">8</button>
+            <button onclick="appendDigit(3)">9</button>
+            <button onclick="appendDigit(4)">4</button>
+            <button onclick="appendDigit(5)">5</button>
+            <button onclick="appendDigit(6)">6</button>
+            <button onclick="appendDigit(7)">3</button>
+            <button onclick="appendDigit(8)">2</button>
+            <button onclick="appendDigit(9)">1</button>
+            <button onclick="clearInput()" class="clear">Clear</button>
+            <button onclick="appendDigit(0)">0</button>
+            <button onclick="deleteLastDigit()" class="delete">x</button>
+            <button onclick="submitPin()" class="submit">Submit</button>
+          </div>
+          <div class="message" id="message"></div>
+        </div>
+      </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
