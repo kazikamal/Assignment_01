@@ -55,7 +55,7 @@ body {
   text-align: center;
 }
 .right input {
-  width: 300px;
+  width: 400px;
   color: #000000;
   font-size: 24px;
   padding: 10px;
@@ -138,6 +138,8 @@ body {
     padding: 10px;
   }
   .right input {
+    height: 40px;
+    width: 280px;
     font-size: 20px;
     padding: 5px;
   }
@@ -147,6 +149,7 @@ body {
     gap: 5px;
   }
   .right .key-pad button {
+    width: 80px;
     font-size: 18px;
     padding: 20px;
     color: white;
@@ -157,11 +160,13 @@ body {
     box-shadow: 0 2px 2px rgba(1, 151, 252, 0.945);
   }
   .right .key-pad button.submit {
+    text-align: center;
     background-color: #24b624;
     color: white;
+    padding: 20px;
     box-shadow: 0 2px 2px rgba(186, 250, 197, 0.842);
     grid-row: 5;
-    width: 100px;
+    width: 90px;
     margin-left: -1px;
     margin-top: 10px;
 }
@@ -179,6 +184,7 @@ body {
     padding: 20px;
   }
   .right input {
+      width: 200px;
       font-size: 20px;
       padding: 5px;
   }
@@ -188,7 +194,7 @@ body {
       gap: 5px;
   }
   .right .key-pad button {
-    width: 100px;
+    width: 90px;
     padding: 15px;
     font-size: 16px;
   }
