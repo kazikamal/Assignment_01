@@ -12,6 +12,8 @@ body {
   justify-content: space-between;
   background-color: #000000;
   color: white;
+  height: 600px;
+  width: 750px;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -71,6 +73,7 @@ body {
   gap: 10px;
 }
 .right .key-pad button {
+  margin-top: 10px;
   font-size: 18px;
   padding: 20px;
   color: white;
@@ -79,6 +82,7 @@ body {
   border-radius: 90px;
   background-color: rgba(38, 41, 40, 0.726);
   box-shadow: 0 2px 2px rgba(1, 151, 252, 0.945);
+  width: 100px;
 }
 .right .key-pad button:hover{
   background-color: #3498db;
@@ -144,9 +148,14 @@ body {
     gap: 5px;
   }
   .right .key-pad button {
-    width: 100px;
-    padding: 15px;
-    font-size: 16px;
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 90px;
+    background-color: rgba(38, 41, 40, 0.726);
+    box-shadow: 0 2px 2px rgba(1, 151, 252, 0.945);
   }
   .right .key-pad button.submit {
     background-color: #24b624;
@@ -168,7 +177,7 @@ body {
       align-items: center;
   }
   .left, .right {
-      padding: 10px;
+    padding: 20px;
   }
   .right input {
       font-size: 20px;

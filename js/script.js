@@ -1,4 +1,4 @@
-let secretKey = '';
+let secretKey = ' ';
     const leftKeyDisplay = document.getElementById('key-generated');
     const inputKeyDisplay = document.getElementById('key-input');
     const displayMessage = document.getElementById('message');
@@ -24,10 +24,12 @@ let secretKey = '';
         MessageChannel.textContent = '';
     }
     function checkKey(){
+        
         if(inputKeyDisplay.value === secretKey){
             message.innerHTML = '<i id="green-check" class="fa-sharp fa-solid fa-check fa-xl" style="color: #00e004;"></i><span>Secret key is matched!</span>'
         }
         else{
             message.innerHTML = '<div><i id="red-x" class=" fa-sharp fa-solid fa-xmark fa-xl" style="color: #ff0000;"></i><span>Secret key not matched!</span></div>'
         }
+        
     }
