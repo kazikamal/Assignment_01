@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
     <div class="container">
         <div class="left">
             <button id="key-generate">Generate Secrate Key</button>
-            <div id="key-generate" class="left-key-display">-------</div>
+            <div id="key-generated" class="left-key-display">-------</div>
         </div>
         <div class="right">
-            <div>Enter Key</div>
-            <input type="text" placeholder="Enter Key" class="display">
+            <input type="text" placeholder="Enter Key" id="key-input" readonly>
             <div class="key-pad">
                 <button onclick="appendDigit(1)">1</button>
                 <button onclick="appendDigit(2)">2</button>
@@ -25,13 +25,16 @@
                 <button onclick="appendDigit(7)">7</button>
                 <button onclick="appendDigit(8)">8</button>
                 <button onclick="appendDigit(9)">9</button>
-                <button onclick="clearInput()" class="clear">Clear</button>
                 <button onclick="appendDigit(0)">0</button>
+                <button onclick="clearInput()" class="clear">Clear</button>
                 <button onclick="deleteLastDigit()" class="delete">X</button>
-                <button onclick="submitPin()" class="submit">Check</button>
+                <button onclick="checkKey()" class="submit">Check</button>
             </div>
+            <!-- <i class="fa-sharp fa-solid fa-check fa-xl" style="color: #00e004;"></i>
+            <i class=" fa-sharp fa-solid fa-xmark fa-xl" style="color: #ff0000;"></i> -->
             <div class="message" id="message"></div>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

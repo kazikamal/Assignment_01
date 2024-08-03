@@ -1,9 +1,9 @@
 let secretKey = '';
-    const leftKeyDisplay = document.getElementById('key-generate');
-    const inputKeyDisplay = document.getElementById('display');
+    const leftKeyDisplay = document.getElementById('key-generated');
+    const inputKeyDisplay = document.getElementById('key-input');
     const displayMessage = document.getElementById('message');
 
-    document.getElementById('left-key-display').addEventListener('click', ()=>{
+    document.getElementById('key-generate').addEventListener('click', ()=>{
         secretKey = generateSecrateKey();
         leftKeyDisplay.textContent = secretKey;
     });
@@ -17,7 +17,7 @@ let secretKey = '';
         }
     }
     function deleteLastDigit(){
-        inputKeyDisplay.value = inputKeyDisplay.value(0, -1);
+        inputKeyDisplay.value = inputKeyDisplay.value.slice(0, -1);
     }
     function clearInput(){
         inputKeyDisplay.value = '';
@@ -25,6 +25,9 @@ let secretKey = '';
     }
     function checkKey(){
         if(inputKeyDisplay.value === secretKey){
-            message.innerHTML = '<i class="bx bxs-checkbox-checked"></i><span>Secret key is matched!</span>'
+            message.innerHTML = '<i id="green-check" class="fa-sharp fa-solid fa-check fa-xl" style="color: #00e004;"></i><span>Secret key is matched!</span>'
+        }
+        else{
+            message.innerHTML = '<div><i id="red-x" class=" fa-sharp fa-solid fa-xmark fa-xl" style="color: #ff0000;"></i><span>Secret key not matched!</span></div>'
         }
     }
